@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+
+    
+        header::before {
+
+            background: url('{% static 'img/1.jpg' %}')  repeat fixed center center/cover;
+            background-color: black;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 250%;
+            opacity: 1;
+            z-index: -1;
+
+        }
+        .navabar{
+          overflow: hidden;
+          position: fixed; /* Set the navbar to fixed position */
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%; /* Full width */
+          
+        }
+        
+        .navbar li a:hover{
+            color: orange;
+
+        }
+        .navbar li a:ctive{
+            color: orange;
+
+        }
+        
+        .navbar-brand{
+          padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            margin: 3px 3px;
+        }
+        .navbar-brand a{
+          color: orange;
+        }
+
+        
+        
+    
+{% endblock css %}
+
+{% block body %}
+<body class="text-center my-5">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column my-5">
+  
+
+  <main role="main" class="inner cover my-5">
+    <h1 class="display-4 font-italic text-white">Welcome To GoalPost</h1>
+    <br><br><br>
+    <p class="lead my-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore distinctio amet nostrum aut illo ab beatae eius quasi adipisci obcaecati magnam aliquid soluta tempore iusto maiores ullam culpa quos vel reprehenderit minus deserunt, porro molestias sint. Fugit sequi, facilis cumque commodi ducimus placeat beatae voluptatum exercitationem aut odio sit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem sunt dicta ratione? Dolore distinctio blanditiis laborum asperiores atque! Amet eaque debitis enim velit voluptate consequuntur autem mollitia sint impedit recusandae nostrum at quia facere atque deleniti ex error, minus doloremque temporibus! Perspiciatis atque error eum at blanditiis nisi sed!</p>
+    
+    <p class="lead my-5">
+      <a href="/blog" class="btn btn-lg btn-secondary my-5">Read blogs</a>
+    </p>
+  </main>
+
+  
+</div>
+
+
+</body>
+
+{% endblock body %}
